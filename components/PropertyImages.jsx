@@ -9,8 +9,8 @@ const PropertyImages = ({ images }) => {
         <div className="container mx-auto">
           {images.length === 1 ? (
             <Item
-              original={image[0]}
-              thumbnail={image[0]}
+              original={images[0]}
+              thumbnail={images[0]}
               width="1000"
               height="600"
             >
@@ -18,7 +18,7 @@ const PropertyImages = ({ images }) => {
                 <Image
                   ref={ref}
                   onClick={open}
-                  src={image[0]}
+                  src={images[0]}
                   alt="property image"
                   className="object-cover h-[400px] mx-auto rounded-xl cursor-pointer"
                   width={1800}
